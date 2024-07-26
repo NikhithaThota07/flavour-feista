@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="flavour.css">
 </head>
 <body>
@@ -48,5 +49,105 @@
             </div>
         </div>
    </div> 
+   <div class="container2">
+    <div class="images2">
+        <div class="A2">
+        <img src="images/restarant1.jpeg" alt="" id="B1">
+        <img src="images/restauant2.jpeg" alt="" id="B2">
+        </div>
+        <img src="images/restarant3.jpeg" alt="" id="B3">
+    </div>
+    <div class="data2">
+            <h3>To Know About Top Most Restaurants</h3>
+             <button>Subscribe</button>
+    </div>
+</div>
+<div class="container4 ">
+    <div class="slide_wrapper swiper">
+         <div class="recipie-list swiper-wrapper">
+            <div class="recipie_dish swiper-slide">
+                <img src="images/indian2.jpeg" alt="">
+                <h2>Indian</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/indian1.jpg" alt="">
+                <h2>North Indian</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/southindian.jpeg" alt="">
+                <h2>South-Indian</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/chinese.jpeg" alt="">
+                <h2>Chinese</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/bibimbap.jpeg" alt="">
+                <h2>korean</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/italian1.jpeg" alt="">
+                <h2>Italian</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/sushi.jpeg" alt="">
+                <h2>Japanese</h2>
+                <button>Read more</button>
+            </div>
+            <div class="recipie_dish swiper-slide">
+                <img src="images/mexican.jpeg" alt="">
+                <h2>Mexican</h2>
+                <button>Read more</button>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+         <div class="slide_button swiper-button-prev"></div>
+         <div class="slide_button swiper-button-next"></div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <script>
+    const swiper = new Swiper('.slide_wrapper', {
+ 
+            loop: true,
+            grabCursor:true,
+            spaceBetween:50,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+                dynamicBullets:true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            breakpoints:{
+                0:{
+                    slidesPerView:1
+                },
+                620:{
+                    slidesPerView:2
+                },
+                1024:{
+                    slidesPerView:4
+                }
+            }
+});
+    </script>
 </body>
 </html>
