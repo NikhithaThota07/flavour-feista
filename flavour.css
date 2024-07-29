@@ -119,13 +119,14 @@ nav ion-icon{
 }
 .data button{
     height: 40px;
-    width: 200px;
+    width: 150px;
     background-color: black;
     border-radius: 30px;
     font-size: 20px;
     margin-left: 200px;
     margin-top: 20px;
     color: white;
+    cursor: pointer;
 }
 .container2{
     height: 500px;
@@ -174,6 +175,7 @@ nav ion-icon{
     border-radius: 30px;
     font-size: 20px;
     margin-top: 30px;
+    cursor: pointer;
 }
 .data2{
     margin-top: 160px;
@@ -185,6 +187,11 @@ nav ion-icon{
     justify-content: center ;
     min-height: 100vh;
     margin-top: 150px
+}
+.container4 h3{
+    margin-left: 100px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 .recipie_dish img{
     height: 150px;
@@ -202,12 +209,13 @@ nav ion-icon{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    box-shadow: 5px 5px 5px 5px gray;
 }
 .slide_wrapper{
     overflow: hidden;
     max-width: 1200px;
     margin: 0 70px 55px;
+    margin-top: 10px;
 }
  .slide_button{
     color: black;
@@ -226,4 +234,98 @@ nav ion-icon{
 .recipie_dish button:hover{
     cursor: pointer;
     font-size: 16px;
+}
+
+.container5{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container5 h3{
+    margin-top: -550px;
+    margin-left: 420px;
+    font-size: 30px;
+}
+.reviews{
+    display: flex;
+    margin-left: -700px;
+}
+.card img{
+    height: 300px;
+    width: 250px;
+    
+    
+}
+.card{
+    height: 430px;
+    width: 250px;
+    margin: 50px; 
+    margin-left: 30px; 
+    overflow: hidden;
+    box-shadow: 10px 10px 20px gray;
+    background-color: rgb(245, 219, 219);
+    background-position: 50%;
+}
+.intro{
+    height: 150px ;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.container6{
+    display: flex;
+    width: 80%;
+    margin: 50px;
+    margin-left: 150px;
+}
+.div1{
+    display: flex;
+}
+.div1 img{
+     height: 250px;
+     width: 200px;
+     border-radius: 10px;
+     
+}
+#dessert1{
+    transform: rotate(-20deg);
+}
+#dessert2{
+    /* margin-top: 50px; */
+    transform: rotate(20deg);
+}
+.div2{
+    margin-left: 100px;
+    /* margin-top: 30px; */
+}
+.div2 h3{
+    font-size: 35px;
+}
+form input{
+    width: 300px;
+    border-bottom: 1px black solid;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+}
+form button{
+    height: 30px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-content: center;
+    
+}
+footer p{
+    margin-left: 450px;
 }
