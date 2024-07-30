@@ -185,27 +185,30 @@ nav{
 <body>
     <!-- Navigation -->
     <nav>
-        <ul class="ul1">
-            <li><a href="">Home</a></li>
-            <li class="navitem"><a href="">Recipies</a>
-                <div class="dropdown">
-                    <a href="">Recipies</a>
-                    <a href="">Tutorials</a>
-                    <a href="">live classes</a>
-                </div>
-            </li>
-            <li><a href="">Restaurants</a></li>
-        </ul>
-        <a href=""><img src="../images/logo.png" alt=""></a>
-        <ul class="ul2">
-            <li><a href="">Schedule</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Reviews</a></li>
-            <li><a href=""><button>Subscribe</button></a></li>
-            <li><a href=""><a href=""><ion-icon name="menu"></ion-icon></a></a></li>
-        </ul> 
-    </nav>
-
+      <ul class="ul1">
+          <li><a href="index.html">Home</a></li>
+          <li class="navitem"><a href="recipes.html">Recipies</a>
+              <div class="dropdown">
+                  <!-- <a href="">Recipies</a> -->
+                  <a href="cookclass.html">Tutorials</a>
+                  <a href="cookclass.html">live classes</a>
+              </div>
+          </li>
+          <li><a href="restaurant.html">Restaurants</a></li>
+      </ul>
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+      <ul class="ul2">
+          <li><a href="meal.html">Schedule</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="review.html">Reviews</a></li>
+          <li><a href="plans.html"><button>Subscribe</button></a></li>
+          <div class="icon-container">
+            <li><ion-icon name="menu" id="triggerIcon"></ion-icon></li>
+        </div>
+      </ul>
+     
+  </nav>
+ 
     <!-- Testimonials Section -->
     <h1>Success Stories</h1>
     <div class="carousel-container">
@@ -269,6 +272,28 @@ function prevSlide() {
 
 document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentSlide);
+});
+
+
+
+
+document.getElementById('triggerIcon').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'block';
+});
+
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+});
+
+document.getElementById('modalButton').addEventListener('click', function() {
+    alert('click ok if You Wanna logout!');
+    document.getElementById('modal').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+    }
 });
 
     </script>

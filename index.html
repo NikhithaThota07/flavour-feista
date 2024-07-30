@@ -9,30 +9,40 @@
     <link rel="stylesheet" href="flavour.css">
 </head>
 <body>
-    <nav>
+    
         <nav>
             <ul class="ul1">
                 <li><a href="index.html">Home</a></li>
-                <li class="navitem"><a href="">Recipies</a>
+                <li class="navitem"><a href="recipes.html">Recipies</a>
                     <div class="dropdown">
-                        <a href="">Recipies</a>
-                        <a href="">Tutorials</a>
-                        <a href="">live classes</a>
+                        <!-- <a href="">Recipies</a> -->
+                        <a href="cookclass.html">Tutorials</a>
+                        <a href="cookclass.html">live classes</a>
                     </div>
                 </li>
-                <li><a href="">Restaurants</a></li>
+                <li><a href="restaurant.html">Restaurants</a></li>
             </ul>
             <a href="index.html"><img src="images/logo.png" alt=""></a>
             <ul class="ul2">
-                <li><a href="">Schedule</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href=""><button>Subscribe</button></a></li>
-                <li><a href=""><a href=""><ion-icon name="menu"></ion-icon></a></a></li>
+                <li><a href="meal.html">Schedule</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="plans.html"><button>Subscribe</button></a></li>
+                <div class="icon-container">
+                  <li><ion-icon name="menu" id="triggerIcon"></ion-icon></li>
+              </div>
             </ul>
            
         </nav>
-    </nav>
+        <div id="modal" class="modal hidden">
+          <div class="modal-content">
+              <span class="close" id="closeModal">&times;</span>
+              <img src="../images/logo.png" alt="Modal Image" height="100px" width="100px">
+              <p> Name:XXXXXXX</p> <br>
+              <p> Mail:XXXXXXX</p>
+              <a href="login.html"><button id="modalButton">logout</button></a>
+          </div>
+      </div>
     <div class="container">
         <img src="images/pizza.jpeg" alt="" id="image1">
         <div class="content1">
@@ -59,7 +69,7 @@
     </div>
     <div class="data2">
             <h3>To Know About Top Most Restaurants</h3>
-             <button>Subscribe</button>
+             <a href="plans.html"><button>Subscribe</button></a>
     </div>
 </div>
 <div class="container4 ">
@@ -197,6 +207,28 @@
                 }
             }
 });
+
+
+
+document.getElementById('triggerIcon').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'block';
+});
+
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+});
+
+document.getElementById('modalButton').addEventListener('click', function() {
+    alert('click ok if You Wanna logout!');
+    document.getElementById('modal').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+    }
+});
+
     </script>
 </body>
 </html>
